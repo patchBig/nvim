@@ -56,3 +56,25 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 | C-f |	fast forward (go to first region in next page)     |
 | C-b |	fast backward (go to first region in previous page)|
 
+## [vim-surround](https://github.com/tpope/vim-surround)
+
+**左括号有空格，右括号无空格**
+
+`Hello world!`
+
+Now with the cursor on "Hello", press ysiw] (iw is a text object). 
+
+`[Hello] world!`
+
+cs["
+
+`"Hello" world!`
+
+ds"
+
+`Hello world!`
+
+ys2w"
+
+`"Hello world"!`
+
