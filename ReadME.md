@@ -78,3 +78,17 @@ ys2w"
 
 `"Hello world"!`
 
+## [im-select](https://github.com/daipeihust/im-select)
+
+退出 insert 模式下，自动切换到苹果的输入法
+
+1. 安装命令行工具 im-select。 GitHub - daipeihust/im-select: Switch your input method through terminal
+
+```bash
+brew tap daipeihust/tap && brew install im-select
+```
+2. vim 配置增加如下配置 (先用 im-select 命令看一下你的默认输入法，下边改成你的)
+
+```bash
+autocmd InsertLeave * :silent !/usr/local/bin/im-select com.apple.keylayout.ABC
+```
