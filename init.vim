@@ -38,6 +38,8 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 
+autocmd InsertLeave * :silent !/usr/local/bin/im-select com.apple.keylayout.ABC
+
 " ==================== Command Mode Cursor Movement ====================
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
@@ -217,6 +219,7 @@ Plug 'tpope/vim-surround'
 Plug 'preservim/nerdcommenter'
 Plug 'kdheepak/lazygit.nvim'
 Plug 'tpope/vim-obsession'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
 " Treesitter
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}

@@ -2,6 +2,8 @@
 
 ## copilot
 
+github copilot 插件用于代码提示
+
 ```vim
 Plug 'github/copilot.vim'
 
@@ -34,3 +36,24 @@ inoremap <c-n> <Plug>(copilot-next)
 inoremap <c-l> <Plug>(copilot-previous)
 
 ```
+
+## mg979/vim-visual-multi
+
+增加多选插件
+
+```vim
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+```
+
+| Key |	Action |
+| :---: | :----|
+| n	| find next (same as C-n)                              |
+| N | find previous                                        |
+| ] |	goto next                                            |
+| [ |	goto previous                                        |
+| q |	skip and go to next                                  |
+| Q |	remove region                                        |
+| C-f |	fast forward (go to first region in next page)     |
+| C-b |	fast backward (go to first region in previous page)|
+
+
