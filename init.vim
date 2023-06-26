@@ -29,6 +29,7 @@ set smartcase
 set clipboard=unnamed
 " 允许backspace和光标键跨越行边界
 set whichwrap+=<,>,h,l
+set cursorline
 
 " 缩进
 set smartindent
@@ -611,13 +612,13 @@ hi NonText ctermfg=gray guifg=grey10
 
 " ============================== theme ==================================
 " catppuccin
-" let g:catppuccin_flavour = "macchiato" " dusk latte, frappe, macchiato, mocha
-" colorscheme catppuccin
+let g:catppuccin_flavour = "macchiato" " dusk latte, frappe, macchiato, mocha
+colorscheme catppuccin
 
-let g:solarized_termcolors=256
-syntax enable
-set background=light
-colorscheme solarized
+" let g:solarized_termcolors=256
+" syntax enable
+" set background=light
+" colorscheme solarized
 
 " ==================== nvim-colorizer.lua ====================
 lua <<EOF
@@ -696,6 +697,4 @@ let g:bullets_enabled_file_types = [
 let g:vmt_cycle_list_item_markers = 1
 let g:vmt_fence_text = 'TOC'
 let g:vmt_fence_closing_text = '/TOC'
-
-
 
