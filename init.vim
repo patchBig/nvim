@@ -322,8 +322,17 @@ set nowritebackup
 " delays and poor user experience
 set updatetime=500
 
-" auto save
-autocmd InsertLeave * if &readonly==0 && filereadable(bufname('%')) | silent update | endif
+" AutoSave 自动保存
+function! AutoSave()
+    if &modified
+        let l:filename = expand('%:p')
+        write
+        redraw
+        echo "File saved: ".l:filename
+    endif
+endfunction
+
+autocmd InsertLeave,TextChanged * call AutoSave()
 
 " Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved
