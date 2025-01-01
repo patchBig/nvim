@@ -1,6 +1,11 @@
 # VIM 配置说明
 
-## [github/copilot.vim](https://github.com/github/copilot.vim)
+## 地址
+`~/.config/nvim/init.vim`
+
+## 插件
+
+### [github/copilot.vim](https://github.com/github/copilot.vim)
 
 用于代码智能提示
 
@@ -37,7 +42,7 @@ inoremap <c-l> <Plug>(copilot-previous)
 
 ```
 
-## [mg979/vim-visual-multi](https://github.com/mg979/vim-visual-multi)
+### [mg979/vim-visual-multi](https://github.com/mg979/vim-visual-multi)
 
 增加多选插件
 
@@ -56,7 +61,7 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 | C-f |	fast forward (go to first region in next page)     |
 | C-b |	fast backward (go to first region in previous page)|
 
-## [vim-surround](https://github.com/tpope/vim-surround)
+### [vim-surround](https://github.com/tpope/vim-surround)
 
 **左括号有空格，右括号无空格**
 
